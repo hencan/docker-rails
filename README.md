@@ -60,8 +60,8 @@ Clonando repositório ASDF
 `git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0` (verifique o branch considerado LTS)
 
 Registrando o ASDF
-`echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc`
-`echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc`
+- `echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc`
+- `echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc`
 
 Verifique o ASDF
 `asdf --version`
@@ -86,9 +86,9 @@ Durante a instalação foi informado que faltava as dependencias abaixo, favor v
 
 
 Instalando o package Ruby
-`asdf install ruby 3.0.0`
-`asdf install ruby 2.7.2`
-`asdf install ruby 2.6.0`
+- `asdf install ruby 3.0.0`
+- `asdf install ruby 2.7.2`
+- `asdf install ruby 2.6.0`
 
 Defina a versãp 3.0.0 como global
 `asdf global ruby 3.0.0`
@@ -103,8 +103,8 @@ cd "pasta_projeto"
 `asdf plugin add nodejs`
 
 Para instalação dos pacotes é necessário importar chaves, visite [aqui](https://github.com/asdf-vm/asdf-nodejs) e execute os comandos.
-`bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring'`
-`bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-previous-release-team-keyring'`
+- `bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring'`
+- `bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-previous-release-team-keyring'`
 
 Agora será possivel instalar os pacotes Nodejs
 `asdf install nodejs 14.15.4` (esta é a atual LTS)

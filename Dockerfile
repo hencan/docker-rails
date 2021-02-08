@@ -12,9 +12,9 @@ RUN apt-get -y install curl
 RUN apt-get -y install git
 RUN apt-get -y install vim
 # ASDF
-RUN git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0
-RUN echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc
-RUN echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc
+# RUN git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0
+# RUN echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc
+# RUN echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc
 # RUN bash .asdf/
 # RUN asdf --version
 

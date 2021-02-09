@@ -3,7 +3,7 @@
 #### [Acessar Documentação Docker](https://docs.docker.com/reference/)
 
 ### Baixar imagem Ubuntu do DockerHub (Lts)
-docker pull ubuntu:20.04
+`docker pull ubuntu:20.04`
 
 ### Criar uma imagem personalizada do Ubuntu com o ASDF
 

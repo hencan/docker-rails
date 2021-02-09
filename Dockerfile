@@ -27,11 +27,7 @@ RUN apt-get update -qq && \
 
 ENV LANG C.UTF-8
 
-RUN useradd -ms $(which bash) asdf
-
-ENV PATH /home/asdf/.asdf/bin:/home/asdf/.asdf/shims:$PATH
-
-USER asdf
+ENV PATH /root/.asdf/shims:/root/.asdf/bin:$PATH 
 
 # asdf
 
@@ -47,6 +43,6 @@ RUN /bin/bash -c "git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch
                   asdf install ruby 2.7.2 && asdf global ruby 2.7.2 && \
                   asdf install ruby 2.6.0 && \
                   asdf install sqlite 3.34.1 && asdf global sqlite 3.34.1 && \
-                  mkdir test && cd test/ && asdf local nodejs 12.18.3 && asdf local ruby 2.6.0 && \
                   gem install rails && \
+                  mkdir projects && cd projects/ && asdf local nodejs 12.18.3 && \
                   rm -rf  /tmp/*"

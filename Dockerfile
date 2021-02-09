@@ -43,7 +43,7 @@ RUN /bin/bash -c "git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch
                   bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring' &&\
                   bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-previous-release-team-keyring' &&\
                   asdf install nodejs 14.15.4 && asdf global nodejs 14.15.4 && \
-                  asdf install nodejs 12.18.3 %% \
+                  asdf install nodejs 12.18.3 && \
                   asdf install ruby 2.7.2 && asdf global ruby 2.7.2 && \
                   asdf install ruby 2.6.0 && \
                   asdf install sqlite 3.34.1 && asdf global sqlite 3.34.1 && \

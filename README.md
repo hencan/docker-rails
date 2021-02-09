@@ -1,4 +1,4 @@
-# docker-rails
+# Docker Ubuntu + ASDF + Ruby + Nodejs + Sqlite + Rails
 
 #### [Acessar Documentação Docker](https://docs.docker.com/reference/)
 

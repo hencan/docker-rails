@@ -10,24 +10,7 @@ docker pull ubuntu:20.04
 #### Criar diretorio
 - Criar arquivo Dockerfile, digite `code Dockerfile` (para VS Code)
 
-#### Conteúdo no Dockerfile
-
-- FROM ubuntu:20.04
-
-- RUN apt-get -y update
-- RUN apt-get -y install build-essential
-- RUN apt-get -y install libssl-dev
-- RUN apt-get -y install libreadline-dev
-- RUN apt-get -y install zlib1g-dev
-- RUN apt-get -y install net-tools
-- RUN apt-get -y install iputils-ping
-- RUN apt-get -y install curl
-- RUN apt-get -y install git
-- RUN apt-get -y install vim
-
-- RUN git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0
-- RUN echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc
-- RUN echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc
+- Utilize o codigo do arquivo [Dockerfile](https://github.com/hencan/docker-rails/blob/main/Dockerfile) neste repositório.
 
 Salve o Dockerfile
 
